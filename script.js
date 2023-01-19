@@ -62,7 +62,7 @@ function initPage() {
 //Change background colors based on hourly increments
 function background () {      
   $(".form").each(function () {
-      timeTest = parseInt($(this).attr("id"));
+      var timeTest = parseInt($(this).attr("id"));
       hour = parseInt(hour);
       console.log(timeTest);
       console.log(hour);
