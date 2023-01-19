@@ -22,7 +22,7 @@ var hourSpan;
 // Get current date and hour
 var interval = setInterval(function() {
   var currentMoment = moment();
-  $('#currentDay').html(currentMoment.format('YYYY MMMM DD') + ' '
+  $('#currentDay').html(currentMoment.format('YYYY MMMM DD') + " "
                       + currentMoment.format('dddd')
                        .substring(0,3).toUpperCase());
   $('#currentDay').html(currentDate + " " + currentMoment.format('hh:mm A'));

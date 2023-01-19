@@ -2,15 +2,26 @@
     font-family: 'Open Sans','Gill Sans', sans-serif;
 }
 
+h1 {
+    font-size: 50px;
+    padding: 10px;
+    color: green;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+header {
+    background-color: azure;
+}
+
 body {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1;
   }
   
 textarea {
     background: transparent;
     color: black;
-    border-left: 1px solid black;
     padding: 10px;
     width: 900px;
   }
@@ -20,7 +31,7 @@ textarea {
     font-weight: bold;
     text-align: center;
     color: black;
-    border-bottom: 5px solid black;
+    border-bottom: 2px solid black;
   }
   
   .row {
@@ -35,6 +46,7 @@ textarea {
     color: black;
     width: 100px;
     padding: 20px;
+    border: 1px solid black;
   }
   
   .past {
@@ -50,7 +62,6 @@ textarea {
   }
   
   .saveButton {
-    border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: green;
