@@ -2,7 +2,7 @@
 var currentDate = moment().format('dddd') + " " + moment().format("Do MMM YYYY");
 var currentHour = moment().format('h:mm:ss a');
 
-// Set hourly increments
+// Declare hourly increments
 var nineAm = $("#9am");
 var tenAm = $("#10am");
 var elevenAm = $("#11am");
@@ -13,7 +13,9 @@ var threePm = $("#3pm");
 var fourPm = $("#4pm");
 var fivePm = $("#5pm");
 
+// Other global variables
 var hour = moment().hours();
+var timeTest;
 var userInput;
 var hourSpan;
 
@@ -62,10 +64,21 @@ function initPage() {
 //Change background colors based on hourly increments
 function background () {      
   $(".form").each(function () {
-      var timeTest = parseInt($(this).attr("id"));
+      timeTest = parseInt($(this).attr("id"));
       hour = parseInt(hour);
-      console.log(timeTest);
-      console.log(hour);
+
+      if (timeTest > 0 && timeTest <=5) {
+        timeTest=12+timeTest;
+      }
+      
+      // Tests
+      //hour=12;
+      //hour=3;
+      //hour=22;
+
+      console.log(timeTest); // Log hourly increments
+      console.log(hour); // Log current time
+
       if (hour > timeTest) {
           $(this).addClass("past");
       } else if (hour < timeTest) {
