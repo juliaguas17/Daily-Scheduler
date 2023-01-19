@@ -38,11 +38,11 @@ textarea {
   }
   
   .present {
-    background-color: lightgreen;
+    background-color: lightcoral;
   }
   
   .future {
-    background-color: lightcoral;
+    background-color: lightgreen;
   }
   
   .saveButton {
