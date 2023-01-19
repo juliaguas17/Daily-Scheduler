@@ -26,6 +26,7 @@ var interval = setInterval(function() {
   $('#currentDay').html(currentDate + " " + momentNow.format('hh:mm:ss A'));
 }, 100);
 
+//Display items for each hourly increment
 function initPage() {
 
   console.log("Current Hour " + hour);
@@ -58,8 +59,8 @@ function initPage() {
   
 } 
 
-function background () {
-      
+//Change background colors based on hourly increments
+function background () {      
   $(".form").each(function () {
       var timeTest = parseInt($(this).attr("id"));
       hour = parseInt(hour);
