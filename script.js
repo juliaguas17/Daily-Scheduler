@@ -19,11 +19,11 @@ var hourSpan;
 
 // Get current date and hour
 var interval = setInterval(function() {
-  var momentNow = moment();
-  $('#currentDay').html(momentNow.format('YYYY MMMM DD') + ' '
-                      + momentNow.format('dddd')
+  var currentMoment = moment();
+  $('#currentDay').html(currentMoment.format('YYYY MMMM DD') + ' '
+                      + currentMoment.format('dddd')
                        .substring(0,3).toUpperCase());
-  $('#currentDay').html(currentDate + " " + momentNow.format('hh:mm:ss A'));
+  $('#currentDay').html(currentDate + " " + currentMoment.format('hh:mm:ss A'));
 }, 100);
 
 //Display items for each hourly increment
@@ -62,8 +62,8 @@ function initPage() {
 //Change background colors based on hourly increments
 function background () {      
   $(".form").each(function () {
-      var timeTest = parseInt($(this).attr("id"));
-      var hour = parseInt(hour);
+      timeTest = parseInt($(this).attr("id"));
+      hour = parseInt(hour);
       console.log(timeTest);
       console.log(hour);
       if (hour > timeTest) {
