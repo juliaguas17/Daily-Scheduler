@@ -63,7 +63,7 @@ function initPage() {
 function background () {      
   $(".form").each(function () {
       var timeTest = parseInt($(this).attr("id"));
-      hour = parseInt(hour);
+      var hour = parseInt(hour);
       console.log(timeTest);
       console.log(hour);
       if (hour > timeTest) {
