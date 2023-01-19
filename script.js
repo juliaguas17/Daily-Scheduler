@@ -25,7 +25,7 @@ var interval = setInterval(function() {
   $('#currentDay').html(currentMoment.format('YYYY MMMM DD') + ' '
                       + currentMoment.format('dddd')
                        .substring(0,3).toUpperCase());
-  $('#currentDay').html(currentDate + " " + currentMoment.format('hh:mm:ss A'));
+  $('#currentDay').html(currentDate + " " + currentMoment.format('hh:mm A'));
 }, 100);
 
 //Display items for each hourly increment
