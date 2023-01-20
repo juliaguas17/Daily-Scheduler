@@ -34,4 +34,5 @@ THEN the saved events persist
 
 ## Deployed Page
 
-https://github.com/juliaguas17/Week-5-Daily-Scheduler
+https://juliaguas17.github.io/Week-5-Daily-Scheduler/
+
