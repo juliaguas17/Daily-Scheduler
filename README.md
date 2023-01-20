@@ -32,6 +32,6 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
-%% Deployed Page
+## Deployed Page
 
 https://github.com/juliaguas17/Week-5-Daily-Scheduler
